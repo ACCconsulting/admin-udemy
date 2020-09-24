@@ -3,14 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class ProgressComponent implements OnInit {
+  porsentaje: number = 20;
+  porsentaje2: number = 30;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  actualizar(event: number) {
+    this.porsentaje = event;
   }
-
 }
